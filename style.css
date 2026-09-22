@@ -1001,7 +1001,7 @@ button {
 
 /* 鞄本体 */
 #inventorySection {
-  width: 350px;
+  width: 220px;
   max-width: 350px;
 }
 /* 移動パネル */
@@ -1009,7 +1009,7 @@ button {
   display: grid;
 
   /* 鞄 280px + 移動 85px */
-  grid-template-columns: 350px 170px;
+  grid-template-columns: 220px 150px;
 
   gap: 6px;
 
@@ -1034,4 +1034,14 @@ button {
   border: 2px solid #5b2600;
   font-weight: bold;
   background: #f0c27b;
+}
+
+/* インベントリーのアイテムを横長にする */
+#inventoryList {
+  grid-template-columns: 1fr;
+}
+
+#inventoryList button,
+.inventory-item {
+  width: 100%;
 }
